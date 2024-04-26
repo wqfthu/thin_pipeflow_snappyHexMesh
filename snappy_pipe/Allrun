@@ -1,0 +1,3 @@
+blockMesh
+snappyHexMesh
+touch Snappy_pipe.foam
