@@ -1,3 +1,6 @@
-blockMesh
-snappyHexMesh
-touch Snappy_pipe.foam
+./Allclean
+blockMesh > blockMesh.log
+snappyHexMesh -overwrite > snappyHexMesh.log
+topoSet > topoSet.log
+createPatch > createPatch.log
+touch snappy_pipe.foam
