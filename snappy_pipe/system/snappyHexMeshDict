@@ -35,12 +35,21 @@ geometry
     }
 
     // Analytical shape; cylinder, sphere
-    refinementBox
+    bottomPatchBox
     {
         type box;
-        min  (-1.0 -0.7 0.0);
-        max  ( 8.0  0.7 2.5);
+        min  (-1.0 -1.0 -1.0);
+        max  ( 1.0  1.0 0.4);
     }
+ 
+    topPatchBox
+    {
+        type box;
+        min  (-1.0 -1.0 39.6);
+        max  ( 1.0  1.0 41.0);
+    }
+
+
 }
 
 
@@ -112,7 +121,7 @@ castellatedMeshControls
         cylinder
         {
             // Surface-wise min and max refinement level
-            level (3 5);
+            level (2 5);
         }
     }
 
@@ -135,6 +144,17 @@ castellatedMeshControls
 
     refinementRegions
     {
+         topPatchBox
+         {
+              mode inside;
+              levels ((1.0 3));
+         }
+
+         bottomPatchBox
+         {
+              mode inside;
+              levels ((1.0 3));
+         }
     }
 
 

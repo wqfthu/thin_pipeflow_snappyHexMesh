@@ -7,11 +7,11 @@
 \*---------------------------------------------------------------------------*/
 Build  : _7bdb509494-20201222 OPENFOAM=2012
 Arch   : "LSB;label=32;scalar=64"
-Exec   : createPatch
-Date   : May 06 2024
-Time   : 06:05:59
+Exec   : createPatch -overwrite
+Date   : May 09 2024
+Time   : 06:15:12
 Host   : ubuntu
-PID    : 3257
+PID    : 3078
 I/O    : uncollated
 Case   : /mnt/hgfs/ubuntushare/GitHub_OpenFOAM/thin_pipeflow_snappyHexMesh/snappy_pipe
 nProcs : 1
@@ -43,7 +43,7 @@ Adding new patch bottomPatch as patch 3 from
 
 
 Read 9040 faces from faceSet topPatch
-Read 175688 faces from faceSet wall
+Read 50712 faces from faceSet wall
 Read 9036 faces from faceSet bottomPatch
 
 Doing topology modification to order faces.
@@ -54,7 +54,7 @@ Removing patches with no faces in them.
 
 Removing zero-sized patch cylinder type wall at position 0
 Removing patches.
-Writing repatched mesh to 0.005
+Writing repatched mesh to 0
 
 End
 
