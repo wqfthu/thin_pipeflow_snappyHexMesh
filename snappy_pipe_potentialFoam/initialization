@@ -1,0 +1,4 @@
+. ${WM_PROJECT_DIR:?}/bin/tools/RunFunctions      # Tutorial Run functions
+
+runApplication potentialFoam -writep
+

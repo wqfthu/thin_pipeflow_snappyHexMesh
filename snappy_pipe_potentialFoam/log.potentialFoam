@@ -1,0 +1,49 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _7bdb509494-20201222 OPENFOAM=2012
+Arch   : "LSB;label=32;scalar=64"
+Exec   : potentialFoam -writep
+Date   : May 17 2024
+Time   : 06:53:48
+Host   : ubuntu
+PID    : 3140
+I/O    : uncollated
+Case   : /mnt/hgfs/ubuntushare/GitHub_OpenFOAM/thin_pipeflow_snappyHexMesh/snappy_pipe_potentialFoam
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+potentialFlow: Operating solver in PISO mode
+
+Reading velocity field U
+
+Constructing pressure field p
+
+Constructing velocity potential field Phi
+
+No MRF models present
+
+
+Calculating potential flow
+GAMG:  Solving for Phi, Initial residual = 1, Final residual = 0.00515373, No Iterations 22
+Continuity error = 1.28955e-08
+Interpolated velocity error = 1.56969e-08
+
+Calculating approximate pressure field
+DICPCG:  Solving for p, Initial residual = 0.000294721, Final residual = 1.42548e-05, No Iterations 27
+ExecutionTime = 7.36 s  ClockTime = 9 s
+
+End
+
